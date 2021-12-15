@@ -1,0 +1,13 @@
+li.el-cheked {
+  font-weight: bold;
+}
+
+li.alta {
+  color: red;
+}
+li.media {
+  color: green;
+}
+li.baja {
+  color: blue;
+}

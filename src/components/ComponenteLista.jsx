@@ -4,16 +4,29 @@ import './componente-lista.css';
 
 export default function ComponenteLista(props) {
   let claseLista = '';
-  if (props.done) {
-    claseLista = '.el-cheked';
-  } else {
-    claseLista = 'el-unchecked';
+  setElementClass();
+  function setElementClass() {
+    props.prioridad;
+    if (props.done) {
+      claseLista += ' el-done';
+    } else {
+      claseLista += ' el-undone';
+    }
+  }
+
+  function setTaskStatus() {
+    props.done = !props.done;
+    setElementClass();
   }
 
   return (
     <li className={claseLista}>
-      <input type="checkbox" />
+      <input type="checkbox" onChange={setTaskStatus} />
       {props.texto}
     </li>
   );
 }
+
+ComponenteLista.defaultProps = {
+  prioridad: 'baja',
+};

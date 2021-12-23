@@ -35,6 +35,10 @@ export function App() {
 
   return (
     <div>
+      <header class="header">
+        <h2>Lista de Cosas a Cumplir</h2>
+        <img src="https://comunidadvalorant.es/wp-content/uploads/2021/04/reyna-en-valorant.jpg"/>
+      </header>
       <h1>Piezas del Coche</h1>
       <ListaClase titulo="Comprar BMW" icono="🚗" elementos={elementos4} />
       <ListaClase titulo="Comprar Mercedes" icono="🏎️" elementos={elementos5} />

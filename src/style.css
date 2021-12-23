@@ -3,3 +3,17 @@ p {
   font-family: Lato;
   color: red;
 }
+
+.header {
+  padding: 6px;
+  text-align: center;
+  background: blue;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+img {
+  max-width: 100px;
+  max-height: 100px;
+}
